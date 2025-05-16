@@ -8,8 +8,7 @@
  '(custom-enabled-themes nil)
  '(desktop-save-mode nil)
  '(fido-vertical-mode t)
- '(org-agenda-files
-   '("c:/Users/frank.louw/OneDrive - redpathmining.com/Documents/_Files/notes.org"))
+ '(org-agenda-files '("c:/Users/frank.louw/AppData/Roaming/org/notes.org"))
  '(org-agexnda-files
    '("/mnt/c/Users/frank.louw/OneDrive - redpathmining.com/Documents/_Files/inbox.org"
      "/mnt/c/Users/frank.louw/OneDrive - redpathmining.com/Documents/_Files/notes.org"))
@@ -51,7 +50,7 @@
 (global-set-key [remap list-buffers] 'ibuffer)
 (global-set-key (kbd "M-o") 'other-window)
 
-(setq org-directory "c:/Users/frank.louw/OneDrive - redpathmining.com/Documents/_Files/")
+(setq org-directory "~/org/")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 
 (setq org-capture-templates
