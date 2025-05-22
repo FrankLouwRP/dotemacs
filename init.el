@@ -47,7 +47,7 @@
 
 (global-set-key [remap list-buffers] 'ibuffer)
 (global-set-key (kbd "M-o") 'other-window)
-
+; test
 (setq org-directory "~/org/")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 
