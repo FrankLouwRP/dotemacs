@@ -1,3 +1,5 @@
+(require 'package)
+
 (add-to-list 'package-archives
              '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
@@ -23,12 +25,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :extend nil :stipple nil :background "SystemWindow" :foreground "SystemWindowText" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight regular :height 120 :width normal :foundry "outline" :family "Fira Code")))))
+)
 
 (use-package docker
   :ensure t)
-(use-package kubernetes
-  :ensure t)
+;(use-package kubernetes
+ ; :ensure t)
 (use-package which-key
   :ensure t
   :config
