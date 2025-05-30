@@ -12,11 +12,12 @@
  '(desktop-save-mode nil)
  '(fido-vertical-mode t)
  '(org-agenda-files '("c:/Users/frank.louw/AppData/Roaming/org/notes.org"))
- '(org-capture-templates nil)
+ '(org-capture-templates nil t)
  '(org-list-allow-alphabetical t)
  '(org-log-into-drawer t)
  '(package-selected-packages
-   '(docker helm kubernetes magit marginalia org-bullets which-key))
+   '(docker helm hyperbole kubernetes magit marginalia org-bullets
+	    which-key))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil)
  '(truncate-lines t))
@@ -25,7 +26,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
-)
+ )
 
 (use-package docker
   :ensure t)
@@ -48,8 +49,6 @@
 			   (org-indent-mode)))
 
 (global-set-key [remap list-buffers] 'ibuffer)
-(global-set-key (kbd "M-o") 'other-window)
-; test
 (setq org-directory "~/org/")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 
@@ -73,5 +72,3 @@
 
 (global-hl-line-mode 1)
 (blink-cursor-mode -1)
-
-
