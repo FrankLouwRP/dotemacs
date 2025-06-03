@@ -54,7 +54,7 @@
 
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline org-default-notes-file "Inbox")
-         "* TODO %?\n  %i\n  %a")
+         "* NEXT %?\n  %i\n  %a")
         ("i" "Inbox Note" entry (file+headline org-default-notes-file "Inbox")
          "* %?\n:LOGBOOK:\n- Entered on %U\n  %i\n:END:")
 	("m" "Meeting" entry (file+headline org-default-notes-file "Meeting notes")
