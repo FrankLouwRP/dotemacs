@@ -12,7 +12,7 @@
  '(desktop-save-mode nil)
  '(fido-vertical-mode t)
  '(org-agenda-files '("c:/Users/frank.louw/AppData/Roaming/org/notes.org"))
- '(org-capture-templates nil t)
+ '(org-capture-templates nil)
  '(org-list-allow-alphabetical t)
  '(org-log-into-drawer t)
  '(package-selected-packages
