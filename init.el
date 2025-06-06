@@ -11,8 +11,10 @@
  '(custom-enabled-themes nil)
  '(desktop-save-mode nil)
  '(fido-vertical-mode t)
+ '(hyperbole-mode t)
  '(org-agenda-files '("c:/Users/frank.louw/AppData/Roaming/org/notes.org"))
- '(org-capture-templates nil)
+ '(org-capture-templates nil t)
+ '(org-fold-core-style 'overlays)
  '(org-list-allow-alphabetical t)
  '(org-log-into-drawer t)
  '(package-selected-packages
