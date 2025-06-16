@@ -12,13 +12,13 @@
  '(desktop-save-mode nil)
  '(fido-vertical-mode t)
  '(hyperbole-mode t)
- '(org-agenda-files '("c:/Users/frank.louw/AppData/Roaming/org/notes.org"))
+ '(org-agenda-files '("c:/Users/frank.louw/OneDrive - redpathmining.com/Documents/_Files/notes/notes.org"))
  '(org-capture-templates nil t)
  '(org-fold-core-style 'overlays)
  '(org-list-allow-alphabetical t)
  '(org-log-into-drawer t)
  '(package-selected-packages
-   '(docker helm hyperbole kubernetes magit marginalia org-bullets
+   '(docker helm hyperbole magit marginalia org-bullets
 	    which-key))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil)
@@ -32,8 +32,6 @@
 
 (use-package docker
   :ensure t)
-;(use-package kubernetes
- ; :ensure t)
 (use-package which-key
   :ensure t
   :config
@@ -51,7 +49,7 @@
 			   (org-indent-mode)))
 
 (global-set-key [remap list-buffers] 'ibuffer)
-(setq org-directory "~/org/")
+(setq org-directory "c:/Users/frank.louw/OneDrive - redpathmining.com/Documents/_Files/notes")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 
 (setq org-capture-templates
