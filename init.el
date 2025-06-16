@@ -12,14 +12,14 @@
  '(desktop-save-mode nil)
  '(fido-vertical-mode t)
  '(hyperbole-mode t)
- '(org-agenda-files '("c:/Users/frank.louw/OneDrive - redpathmining.com/Documents/_Files/notes/notes.org"))
- '(org-capture-templates nil t)
+ '(org-agenda-files
+   '("c:/Users/frank.louw/OneDrive - redpathmining.com/Documents/_Files/notes/notes.org"))
+ '(org-capture-templates nil)
  '(org-fold-core-style 'overlays)
  '(org-list-allow-alphabetical t)
  '(org-log-into-drawer t)
  '(package-selected-packages
-   '(docker helm hyperbole magit marginalia org-bullets
-	    which-key))
+   '(docker helm hyperbole magit marginalia org-bullets which-key))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil)
  '(truncate-lines t))
@@ -47,10 +47,11 @@
 (add-hook 'org-mode-hook (lambda ()
 			   (visual-line-mode)
 			   (org-indent-mode)))
-
+(global-set-key [remap dabbrev-expand] 'hippie-expand)
 (global-set-key [remap list-buffers] 'ibuffer)
 (setq org-directory "c:/Users/frank.louw/OneDrive - redpathmining.com/Documents/_Files/notes")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
+(setq org-agenda-files '("c:/Users/frank.louw/OneDrive - redpathmining.com/Documents/_Files/notes/notes.org"))
 
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline org-default-notes-file "Inbox")
