@@ -10,7 +10,7 @@
 (setq visible-bell t)
 (line-number-mode t)
 (global-hl-line-mode t)
-(blink-cursor-mode -1)x
+(blink-cursor-mode -1)
 (setq line-spacing 3)
 
 (keymap-global-set "C-c c" 'org-capture)
