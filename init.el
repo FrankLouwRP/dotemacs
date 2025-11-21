@@ -13,13 +13,28 @@
 (blink-cursor-mode -1)
 (setq line-spacing 3)
 
+(keymap-global-set "M-o" 'other-window)
+
 (keymap-global-set "C-c c" 'org-capture)
 (keymap-global-set "C-c a" 'org-agenda)
 (keymap-global-set "C-c l" 'org-store-link)
 (setq org-directory "~/gtd")
+(setq org-default-notes-file (concat org-directory "inbox.org"))
 (setq org-agenda-files (list org-directory))
 (setq org-refile-targets '((org-agenda-files :maxlevel . 1)))
 (setq org-archive-location (concat org-directory "/archive.org::"))
+
+(setq org-capture-templates
+      '(("I" "Inbox note - personal" entry (file+headline "~/gtd/personalinbox.org" "Inbox")
+              "* TODO %?\n  %i\n  %a")
+	("i" "Inbox note - work" entry (file+headline "~/gtd/workinbox.org" "Inbox")
+              "* TODO %?\n  %i\n  %a")
+	("T" "Todo - personal" entry (file+headline "~/gtd/personalnotes.org" "Tasks")
+              "* TODO %?\n  %i\n  %a")
+	("t" "Todo - work" entry (file+headline "~/gtd/worknotes.org" "Tasks")
+              "* TODO %?\n  %i\n  %a")
+             ("j" "Journal" entry (file+datetree "~/gtd/journal.org")
+              "* %?\nEntered on %U\n  %i\n  %a")))
 
 (add-hook 'org-mode-hook (lambda ()
 			   (org-indent-mode)
